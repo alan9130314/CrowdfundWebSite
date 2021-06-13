@@ -11625,6 +11625,10 @@ fieldset:disabled .btn {
   font-family: "Baloo Tamma 2" !important;
 }
 
+.rounded-img {
+  border-radius: 32px;
+}
+
 a.icon {
   height: 30px;
   width: 30px;
