@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="scss/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Baloo+Tamma+2">
+
+
+    <title>拼拼</title>
+</head>
+<style>
+    /* * {
+        font-family: "Noto Sans TC";
+    } */
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-warning border-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/logo.jpg" alt="" height="40" width="111">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">關於</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">挖寶</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">我有大膽的想法</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-cente">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning rounded-pill me-3 px-4 fw-bold border-3"
+                        data-bs-toggle="modal" data-bs-target="#login">
+                        登入
+                    </button>
+
+                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold border-2">
+                        註冊
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="account" class="form-label">帳號</label>
+                            <input type="email" class="form-control" id="account" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">密碼</label>
+                            <input type="email" class="form-control" id="pwd" placeholder="">
+                        </div>
+                        <a id="forget_pwd" href="#" class="text-black-50 fs-6 text-decoration-none mb-3 d-inline-block">
+                            忘記密碼？
+                        </a>
+                        <button type="button" class="btn btn-warning btn-lg w-100  rounded-pill mb-3">
+                            登入
+                        </button>
+                    </form>
+                    <div class="position-relative my-3">
+                        <div class="progress " style="height: 1px;">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6 class="position-absolute  top-50 start-50 translate-middle bg-white px-3">
+                            還沒有帳號？ <a href="#" class="link-danger text-decoration-none">註冊一個帳號</a>
+                        </h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="pt-3 bg-gray-100">
+        <div class="container">
+            <div class=" mb-3">
+                <span class="badge bg-secondary mb-2">魔法科技</span>
+                <h1 class="fw-bold">
+                    拍出會動的照片｜LivePhotos 魔法拍立得
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <img class="img-fluid mb-3"
+                        src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/produt_image.jpg" alt="">
+                </div>
+                <div class="col-12 col-md-5">
+                    <p class="mb-1  fs-7">目標 $600,000</p>
+                    <p class="fw-bold fs-2 ff-BalooTamma2-SemiBold">$280,047</p>
+                    <div class="progress  rounded-pill mb-3">
+                        <div class="progress-bar bg-warning text-reset" role="progressbar" style="width: 41%;"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">41%</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <p class="fs-6 mb-1 fs-7">
+                                贊助人數
+                            </p>
+                            <p class="fw-bold fs-2 ff-BalooTamma2-SemiBold">
+                                1374 人
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p class="fs-6 mb-1 fs-7">
+                                募資倒數
+                            </p>
+                            <p class="fw-bold fs-2 ff-BalooTamma2-SemiBold">
+                                27 天
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <ul class="icons d-flex list-unstyled">
+                            <li>
+                                <a href="#" data-bs-toggle="tooltip" title="認證標章"
+                                    class="me-3 d-flex text-decoration-none link-dark align-items-center">
+                                    <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good01.svg"
+                                        alt="">
+                                    <span class="block d-md-none ms-3">
+                                        認證標章
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="tooltip" title="品質保證"
+                                    class="me-3 d-flex text-decoration-none link-dark align-items-center">
+                                    <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good02.svg"
+                                        alt="">
+                                    <span class="block d-md-none ms-3">
+                                        品質保證
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="tooltip" title="原生創意"
+                                    class="me-3 d-flex text-decoration-none link-dark align-items-center">
+                                    <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good03.svg"
+                                        alt="">
+                                    <span class="block d-md-none ms-3">
+                                        原生創意
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="tooltip" title="人氣王"
+                                    class="me-3 d-flex text-decoration-none link-dark align-items-center">
+                                    <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/icon_good04.svg"
+                                        alt="">
+                                    <span class="block d-md-none ms-3">
+                                        人氣王
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                        <p class="info border-start border-warning border-3 p-3 bg-white rounded-3">
+                            專案募資中！
+                            <br>
+                            在 2021/06/14 23:59 募資結束前，您都可以贊助我們！
+                        </p>
+                    </div>
+                    <div class="col">
+                        <a href="#footer" class="btn btn-warning w-100 rounded-pill fw-bold bg-hover-warning darkGray">
+                            贊助專案
+                        </a>
+                    </div>
+                    <div class="row my-3 g-2">
+                        <div class="col-6 col-md-7">
+                            <div class="btn btn-outline-dark w-100 rounded-pill fw-bold bg-hover-outline-dark ">
+                                <i class="fas fa-heart custom-heart me-3"></i>追蹤專案
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <div class="btn btn-outline-dark w-100 rounded-pill fw-bold">
+                                <i class="fas fa-share-alt me-3"></i>分享
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="border-bottom border-top bg-white border-1  sticky-top">
+        <div class="container">
+            <ul class="nav  justify-content-between justify-content-md-start bg-white" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link active link-dark p-3" id="planIntro-tab" data-bs-toggle="tab"
+                        data-bs-target="#planIntro" role="tab" aria-controls="planIntro" aria-selected="true"
+                        onclick="goToTab()">專案介紹</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark p-3" id="QA-tab" data-bs-toggle="tab" data-bs-target="#QA"
+                        role="tab" aria-controls="QA" aria-selected="false" onclick="goToTab()">常見問答</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark p-3" id="progress-tab" data-bs-toggle="tab"
+                        data-bs-target="#progress" role="tab" aria-controls="progress" aria-selected="false"
+                        onclick="goToTab()">目前進度</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#" class="nav-link link-dark p-3" id="comment-tab" data-bs-toggle="tab"
+                        data-bs-target="#comment" role="tab" aria-controls="comment" aria-selected="false"
+                        onclick="goToTab()">留言</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="tab-content mt-3" id="myTabContent">
+                        <div class="tab-pane fade show active mb-3" id="planIntro" role="tabpanel"
+                            aria-labelledby="planIntro-tab">
+                            <img class="img-fluid w-100" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/p1.jpg"
+                                alt="">
+                            <h3 class=" ps-3  mt-3 border-3 border-start fw-bold  border-warning rounded-3">
+                                施了魔法的照片
+                            </h3>
+                            <p class="lh-lg">
+                                受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。
+                            </p>
+                            <img class="img-fluid mt-3" src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/p2.jpg"
+                                alt="">
+                            <h3 class=" ps-3  mt-3 border-3 border-start fw-bold fs-4 border-warning rounded-3">
+                                留下當下的美好
+                            </h3>
+                            <p class="lh-lg">
+                                受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。
+                            </p>
+
+                        </div>
+
+                        <div class="tab-pane fade  mb-3" id="QA" role="tabpanel" aria-labelledby="QA-tab">
+                            <div class="accordion" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <span class="QA bg-warning text-dark fw-bold rounded p-1 me-3 fs-6">
+                                                Q1
+                                            </span>影片拍完之後可以編輯嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="text-secondary mb-0 lh-lg">可以進行簡易的編輯，內建 5
+                                                種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <span class="bg-warning text-dark fw-bold rounded p-1 me-3 fs-6">
+                                                Q2
+                                            </span>有提供保固或維修服務嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="text-secondary mb-0 lh-lg">
+                                                提供產品售後服務，對產品本體(不含配件、線材)提供二年保固服務。產品因意外或人為不當使用或未經授權維修等非依使用手冊使用而造成產品損壞者，則不在保固範圍之內，得向客戶酌收產品維修服務費用。
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  ">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <span class="bg-warning text-dark fw-bold rounded p-1 me-3 fs-6">
+                                                Q3
+                                            </span>印出來的拍立得照片需要充電嗎？
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="text-secondary mb-0 lh-lg">
+                                                不用，取出後稍微搖晃，相片與空氣接觸數秒後便會產生圖像顏色。
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  ">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            <span class="bg-warning text-dark fw-bold rounded p-1 me-3 fs-6">
+                                                Q4
+                                            </span>補充包底片要去哪裡購買呢？
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="text-secondary mb-0 lh-lg">
+                                                本產品可以兼容 i-type 及 600 相片，各大網路平台皆有販售。
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item  ">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="false" aria-controls="flush-collapseFive">
+                                            <span class="bg-warning text-dark fw-bold rounded p-1 me-3 fs-6">
+                                                Q5
+                                            </span>運送方式及付款方式有哪些呢？
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="text-secondary mb-0 lh-lg">
+
+                                                可以選擇超商取貨及宅配，付款方式有銀行轉帳及信用卡支付。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade mb-3" id="progress" role="tabpanel" aria-labelledby="progress-tab">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-4">
+                                                <img class="img-fluid "
+                                                    src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/news01.jpg"
+                                                    alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body d-flex align-items-start flex-column h-100">
+                                                    <h4 class="card-title mb-0 fs-6">高雄體驗會｜免費參加送帆布袋</h4>
+                                                    <p class="card-text mb-1 ">
+                                                        <small class="text-muted">
+                                                            2021-6-20
+                                                        </small>
+                                                    </p>
+                                                    <p class="text-muted d-none d-xl-block">
+                                                        大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                                                    </p>
+                                                    <a href="#"
+                                                        class="stretched-link text-decoration-none fs-6 text-danger mt-auto">
+                                                        MORE
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-4">
+                                                <img class="img-fluid "
+                                                    src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/news01.jpg"
+                                                    alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body d-flex align-items-start flex-column h-100">
+                                                    <h4 class="card-title mb-0 fs-6">高雄體驗會｜免費參加送帆布袋</h4>
+                                                    <p class="card-text mb-1 ">
+                                                        <small class="text-muted">
+                                                            2021-6-20
+                                                        </small>
+                                                    </p>
+                                                    <p class="text-muted d-none d-xl-block">
+                                                        大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                                                    </p>
+                                                    <a href="#"
+                                                        class="stretched-link text-decoration-none fs-6 text-danger mt-auto">
+                                                        MORE
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-4">
+                                                <img class="img-fluid "
+                                                    src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/news01.jpg"
+                                                    alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body d-flex align-items-start flex-column h-100">
+                                                    <h4 class="card-title mb-0 fs-6">高雄體驗會｜免費參加送帆布袋</h4>
+                                                    <p class="card-text mb-1 ">
+                                                        <small class="text-muted">
+                                                            2021-6-20
+                                                        </small>
+                                                    </p>
+                                                    <p class="text-muted d-none d-xl-block">
+                                                        大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                                                    </p>
+                                                    <a href="#"
+                                                        class="stretched-link text-decoration-none fs-6 text-danger mt-auto">
+                                                        MORE
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-pane fade mb-3" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+                            <p class="info border-start border-warning border-3 p-3 bg-white">
+                                只有本專案的贊助者才可以留言哦，如果有任何專案相關的問題，歡迎<a href="#"
+                                    class="link-danger text-decoration-none">聯絡提案人</a>！
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="border-1 border rounded p-3 mb-3">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img class="rounded-circle"
+                                                src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/user_img01.jpg"
+                                                alt="">
+                                            <div class="d-flex flex-column ms-3">
+                                                <a href="#" alt="" class="fw-bold text-decoration-none link-dark ">
+                                                    廖小杰
+                                                </a>
+                                                <small>
+                                                    2020年5月22日 11:32
+                                                </small>
+
+                                            </div>
+                                        </div>
+                                        <p>
+                                            晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！
+                                        </p>
+                                        <div class="bg-light rounded-1 p-3">
+                                            <small class="text-danger ">
+                                                提案者回覆
+                                            </small>
+                                            <p>
+                                                你要嘛起床的時候開燈，要嘛給我們更多錢開發阿
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border-1 border rounded p-3 mb-3">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img class="rounded-circle"
+                                                src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/user_img02.jpg"
+                                                alt="">
+                                            <div class="d-flex flex-column ms-3">
+                                                <a href="#" alt="" class="fw-bold text-decoration-none link-dark  ">
+                                                    卡阿伯
+                                                </a>
+                                                <small>
+                                                    2020年5月22日 11:32
+                                                </small>
+
+                                            </div>
+                                        </div>
+                                        <p>
+                                            希望有更多花色可以選擇！我女兒最近喜歡綠色
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border-1 border rounded p-3 mb-3">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img class="rounded-circle"
+                                                src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/user_img02.jpg"
+                                                alt="">
+                                            <div class="d-flex flex-column ms-3">
+                                                <a href="#" alt="" class="fw-bold text-decoration-none link-dark ">
+                                                    賈師
+                                                </a>
+                                                <small>
+                                                    2020年5月22日 11:32
+                                                </small>
+
+                                            </div>
+                                        </div>
+                                        <p>
+                                            可以做個相簿功能嗎？拍出好看的影片再讓我們選擇要印出哪一張這樣
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="border-1 border rounded p-3 mb-3">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <img class="rounded-circle"
+                                                src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/user_img02.jpg"
+                                                alt="">
+                                            <div class="d-flex flex-column ms-3">
+                                                <a href="#" alt="" class="fw-bold text-decoration-none link-dark ">
+                                                    俊俊
+                                                </a>
+                                                <small>
+                                                    2020年5月22日 11:32
+                                                </small>
+
+                                            </div>
+                                        </div>
+                                        <p>
+                                            test123 看一下我是不是真的可以留言
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-md-none">
+                            <div class="card rounded-3 project mt-3">
+                                <div class="card-body">
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-3">
+                                            <img class="rounded-pill border-2 border-warning border" width="70"
+                                                height="70"
+                                                src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/store_img.jpg"
+                                                alt="">
+
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="card-title">缺錢事務所</h5>
+                                            <h6 class="card-subtitle">已發起 1 個專案</h6>
+                                        </div>
+                                    </div>
+                                    <p class="darkGray">
+                                        需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！
+                                    </p>
+
+                                    <div
+                                        class="card-text d-flex justify-content-between align-items-center mt-3 flex-nowrap">
+                                        <ul class="list-unstyled list-group list-group-horizontal">
+                                            <li class="me-3 me-md-1 me-lg-3">
+                                                <a href="#" class=" link-light rounded-circle text-center  icon">
+                                                    <i class="fab fa-facebook-f "></i>
+                                                </a>
+                                            </li>
+                                            <li class="me-3 me-md-1 me-lg-3">
+                                                <a href="#" class=" link-light   rounded-circle text-center  icon">
+                                                    <i class="fab fa-youtube rounded-circle "></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="btn btn-outline-dark rounded-pill text-nowrap">
+                                            <i class="far fa-comment-dots me-3"></i>聯絡我們
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="border-start border-end  border-3 border-warning text-center mt-3 fw-bold fs-5">
+                                選擇一個方案來支持
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="card mt-3 rounded-3 project  d-md-block">
+                                        <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/plan_img.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="card-title d-flex justify-content-between fs-6  text-dark">
+                                                <small>限時優惠</small>
+                                                <small class="ff-BalooTamma2-SemiBold">2 days 20:05:20</small>
+                                            </div>
+                                            <hr>
+                                            <h3 class="fw-bold fs-6">
+                                                買一送一，只有兩百組別錯過
+                                            </h3>
+                                            <p class="fw-bold fs-6 mb-1">
+                                                NT$ 1600
+                                            </p>
+                                            <div class=" mb-1">
+                                                <span class="badge bg-darkYellow text-secondary">
+                                                    已被贊助88次
+                                                </span>
+                                                <span class="badge bg-secondary">
+                                                    限量<span class="text-warning">200</span>個
+                                                </span>
+                                            </div>
+                                            <p class="card-text text-secondary">
+                                                受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                                            </p>
+                                            <a href="#"
+                                                class="btn btn-warning w-100 rounded-pill bg-hover-warning darkGray">贊助此專案</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mt-3 rounded-3 project  d-md-block">
+                                        <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/plan_img.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="card-title d-flex justify-content-between fs-6  text-dark">
+                                                <small>限時優惠</small>
+                                                <small class="ff-BalooTamma2-SemiBold">2 days 20:05:20</small>
+                                            </div>
+                                            <hr>
+                                            <h3 class="fw-bold fs-6">
+                                                買一送一，只有兩百組別錯過
+                                            </h3>
+                                            <p class="fw-bold fs-6 mb-1">
+                                                NT$ 1600
+                                            </p>
+                                            <div class=" mb-1">
+                                                <span class="badge bg-darkYellow text-secondary">
+                                                    已被贊助88次
+                                                </span>
+                                                <span class="badge bg-secondary">
+                                                    限量<span class="text-warning">200</span>個
+                                                </span>
+                                            </div>
+                                            <p class="card-text text-secondary">
+                                                受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                                            </p>
+                                            <a href="#"
+                                                class="btn btn-warning w-100 rounded-pill bg-hover-warning darkGray">贊助此專案</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card mt-3 rounded-3 project  d-md-block">
+                                        <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/plan_img.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="card-title d-flex justify-content-between fs-6  text-dark">
+                                                <small>限時優惠</small>
+                                                <small class="ff-BalooTamma2-SemiBold">2 days 20:05:20</small>
+                                            </div>
+                                            <hr>
+                                            <h3 class="fw-bold fs-6">
+                                                買一送一，只有兩百組別錯過
+                                            </h3>
+                                            <p class="fw-bold fs-6 mb-1">
+                                                NT$ 1600
+                                            </p>
+                                            <div class=" mb-1">
+                                                <span class="badge bg-darkYellow text-secondary">
+                                                    已被贊助88次
+                                                </span>
+                                                <span class="badge bg-secondary">
+                                                    限量<span class="text-warning">200</span>個
+                                                </span>
+                                            </div>
+                                            <p class="card-text text-secondary">
+                                                受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                                            </p>
+                                            <a href="#"
+                                                class="btn btn-warning w-100 rounded-pill bg-hover-warning darkGray">贊助此專案</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-md-block pt-3">
+                            <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/hezuo.svg" alt=""
+                                class="img-fluid mt-3 text-center mx-auto d-block">
+                            <div class="position-relative my-5">
+                                <div class="progress " style="height: 3px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%"
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <h3 class="position-absolute  top-50 start-50 translate-middle bg-white px-3 fw-bold">
+                                    贊助專案
+                                </h3>
+
+                            </div>
+                            <form action="" id="form" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="FundPlan" class="form-label">贊助方案</label>
+                                    <select class="form-select  mb-1" aria-label="Default select example" id="FundPlan"
+                                    required>
+                                        <option selected disabled value="">請選擇一個方案</option>
+                                        <option value="A">方案A</option>
+                                        <option value="B">方案A</option>
+                                        <option value="C">方案A</option>
+                                    </select>
+                                    <p class="invalid-feedback">
+                                        請選擇一個方案
+                                    </p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">聯絡電話</label>
+                                    <input type="text" class="form-control mb-1" id="phone" placeholder="" required>
+                                    <p class="invalid-feedback">
+                                        請輸入正確的電話格式
+                                    </p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">聯絡信箱</label>
+                                    <input type="email" class="form-control mb-1" id="email" placeholder="" required>
+                                    <p class="invalid-feedback">
+                                        請輸入正確的郵件格式
+                                    </p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="FundPlan" class="form-label">付款方式</label>
+                                    <select class="form-select  mb-1" aria-label="Default select example" id="FundPlan" required
+                                        >
+                                        <option selected disabled value="">請選擇一個方案</option>
+                                        <option value="A">信用卡</option>
+                                        <option value="B">ATM</option>
+                                        <option value="C">電子支付</option>
+                                    </select>
+                                    <p class="invalid-feedback">
+                                        請選擇一個付款方式
+                                    </p>
+                                </div>
+                                <button type="submit"
+                                    class="btn btn-warning rounded-pill w-100 d-block d-md-none">贊助專案</button>
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" id="submit"
+                                        class="btn btn-warning rounded-pill w-25 d-none d-md-block">贊助專案</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="card rounded-3 project mt-3">
+                        <div class="card-body">
+                            <div class="row align-items-center mb-3">
+                                <div class="col-2 col-md-4">
+                                    <img class="rounded-pill border-2 border-warning border img-fluid w-100" width="100"
+                                        height="100"
+                                        src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/store_img.jpg" alt="">
+
+                                </div>
+                                <div class="col-10  col-md-8">
+                                    <h5 class="card-title">缺錢事務所</h5>
+                                    <h6 class="card-subtitle">已發起 1 個專案</h6>
+                                </div>
+                            </div>
+                            <p class="darkGray">
+                                需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！
+                            </p>
+
+                            <div class="card-text d-flex justify-content-between align-items-center mt-3 ">
+                                <ul class="list-unstyled list-group list-group-horizontal">
+                                    <li class="me-3 me-md-1 me-lg-3">
+                                        <a href="#" class=" link-light rounded-circle text-center  icon">
+                                            <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3 me-md-1 me-lg-3">
+                                        <a href="#" class=" link-light   rounded-circle text-center  icon">
+                                            <i class="fab fa-youtube rounded-circle "></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-dark rounded-pill text-nowrap">
+                                    <i class="far fa-comment-dots me-3"></i>聯絡我們
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="border-start border-end  border-3 border-warning text-center mt-3 fw-bold fs-5">
+                        選擇一個方案來支持
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="card mt-3 rounded-3 project  d-md-block">
+                                <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/plan_img.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="card-title d-flex justify-content-between fs-6  text-dark">
+                                        <small>限時優惠</small>
+                                        <small class="ff-BalooTamma2-SemiBold">2 days 20:05:20</small>
+                                    </div>
+                                    <hr>
+                                    <h3 class="fw-bold fs-6">
+                                        買一送一，只有兩百組別錯過
+                                    </h3>
+                                    <p class="fw-bold fs-6 mb-1">
+                                        NT$ 1600
+                                    </p>
+                                    <div class=" mb-1">
+                                        <span class="badge bg-darkYellow text-secondary">
+                                            已被贊助88次
+                                        </span>
+                                        <span class="badge bg-secondary">
+                                            限量<span class="text-warning">200</span>個
+                                        </span>
+                                    </div>
+                                    <p class="card-text text-secondary">
+                                        受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-warning w-100 rounded-pill bg-hover-warning darkGray">贊助此專案</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card mt-3 rounded-3 project  d-md-block">
+                                <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/plan_img.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="card-title d-flex justify-content-between fs-6  text-dark">
+                                        <small>限時優惠</small>
+                                        <small class="ff-BalooTamma2-SemiBold">2 days 20:05:20</small>
+                                    </div>
+                                    <hr>
+                                    <h3 class="fw-bold fs-6">
+                                        買一送一，只有兩百組別錯過
+                                    </h3>
+                                    <p class="fw-bold fs-6 mb-1">
+                                        NT$ 1600
+                                    </p>
+                                    <div class=" mb-1">
+                                        <span class="badge bg-darkYellow text-secondary">
+                                            已被贊助88次
+                                        </span>
+                                        <span class="badge bg-secondary">
+                                            限量<span class="text-warning">200</span>個
+                                        </span>
+                                    </div>
+                                    <p class="card-text text-secondary">
+                                        受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-warning w-100 rounded-pill bg-hover-warning darkGray">贊助此專案</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card mt-3 rounded-3 project  d-md-block">
+                                <img src="https://ecjia.com.tw/demo/bs5_homework_0526/assets/plan_img.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="card-title d-flex justify-content-between fs-6  text-dark">
+                                        <small>限時優惠</small>
+                                        <small class="ff-BalooTamma2-SemiBold">2 days 20:05:20</small>
+                                    </div>
+                                    <hr>
+                                    <h3 class="fw-bold fs-6">
+                                        買一送一，只有兩百組別錯過
+                                    </h3>
+                                    <p class="fw-bold fs-6 mb-1">
+                                        NT$ 1600
+                                    </p>
+                                    <div class=" mb-1">
+                                        <span class="badge bg-darkYellow text-secondary">
+                                            已被贊助88次
+                                        </span>
+                                        <span class="badge bg-secondary">
+                                            限量<span class="text-warning">200</span>個
+                                        </span>
+                                    </div>
+                                    <p class="card-text text-secondary">
+                                        受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                                    </p>
+                                    <a href="#"
+                                        class="btn btn-warning w-100 rounded-pill bg-hover-warning darkGray">贊助此專案</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="javascript:void(0)"
+        class="btn btn-warning p-3 text-center text-decoration-none fixed-bottom bg-hover-warning d-md-none"
+        onclick="goForm()" id="bottomBtn">贊助專案
+    </a>
+
+    <footer id="footer" class="mt-5 container-fluid text-center p-3 bg-dark text-white">
+        Copyright © 拼拼 All rights reserved.
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        var form = document.getElementById("form");
+
+        $('.accordion-item').click(function (e) {
+            e.preventDefault();
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('shadow-accordion');
+                $(this).removeClass('active')
+            } else {
+                $(this).addClass('active')
+                $(this).addClass('shadow-accordion');
+            }
+        });
+        function heightToTop(ele) {
+            let bridge = ele;
+            let root = document.body;
+            let height = 0;
+            do {
+                height += bridge.offsetTop;
+                bridge = bridge.offsetParent;
+            } while (bridge !== root);
+
+            return height;
+        }
+        function goToTab() {
+            window.scrollTo({
+                top: heightToTop(document.getElementsByClassName("tab-content")[0]) - 70,
+                behavior: "smooth"
+            });
+        }
+        function goForm() {
+            window.scrollTo({
+                top: heightToTop(form) - 170,
+                behavior: "smooth",
+            });
+        }
+
+        var bottomBtn = document.getElementById("bottomBtn");
+        bottomBtn.style.display = "none";
+        window.onscroll = function () {
+            const t = document.documentElement.scrollTop || document.body.scrollTop;
+            if (bottomBtn !== null) {
+                console.log(t , heightToTop(form));
+                if (
+                    t >
+                    heightToTop(document.getElementsByClassName("tab-content")[0]) - 100 &&
+                    t < heightToTop(form) - 459
+                ) {
+                    bottomBtn.style.display = "block";
+                } else {
+                    bottomBtn.style.display = "none";
+                }
+            }
+        };
+        //form validation
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>

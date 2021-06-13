@@ -1,0 +1,53 @@
+.bg-hover-warning:hover {
+    background-color: #FF785E;
+    color: #fff;
+}
+.btn-outline-secondary {
+    &:hover {
+        background-color: #FFDF65;
+        color: #858377;
+        border-color: #FFDF65;
+        & > i {
+            color: #FF785E;
+        }
+    }
+}
+
+.nav .active{
+    border-bottom: 2px solid #ffc107;
+}
+.darkGray{
+    color: #373A3C;
+}
+
+.lightGray{
+    color: #858377;
+}
+.bg-darkYellow{
+    background-color: #E8E8DB;
+}
+.ff-BalooTamma2-SemiBold{
+    font-family: "Baloo Tamma 2" !important;
+}
+a.icon{
+    height:30px;
+    width:30px;
+    display: inline-block;
+    background-color: #636057;
+    color: #fff;
+    &:hover{
+    color: #636057;
+    background-color: #fff;
+    border: 1px solid #636057;
+    }
+    & > i{
+        line-height: 1.8;
+    }
+}
+.accordion-button > .QA{
+    width: 28px;
+    height: 28px;
+}
+.accordion-body{
+    padding: 1rem 1.25rem 1rem calc(28px + 2.25rem);
+}
