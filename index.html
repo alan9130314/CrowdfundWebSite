@@ -70,19 +70,25 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="" class="needs-validation" novalidate>
                         <div class="mb-3">
                             <label for="account" class="form-label">帳號</label>
-                            <input type="email" class="form-control" id="account" placeholder="">
+                            <input type="email" class="form-control" id="account" placeholder="" required>
+                            <p class="invalid-feedback">
+                                請輸入帳號
+                            </p>
                         </div>
                         <div class="mb-3">
                             <label for="pwd" class="form-label">密碼</label>
-                            <input type="email" class="form-control" id="pwd" placeholder="">
+                            <input type="email" class="form-control" id="pwd" placeholder="" required>
+                            <p class="invalid-feedback">
+                                請輸入密碼
+                            </p>
                         </div>
                         <a id="forget_pwd" href="#" class="text-black-50 fs-6 text-decoration-none mb-3 d-inline-block">
                             忘記密碼？
                         </a>
-                        <button type="button" class="btn btn-warning bg-hover-warning btn-lg w-100  rounded-pill mb-3">
+                        <button type="submit" class="btn btn-warning bg-hover-warning btn-lg w-100  rounded-pill mb-3">
                             登入
                         </button>
                     </form>
